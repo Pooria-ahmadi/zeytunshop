@@ -1,0 +1,50 @@
+.position-image-suggested{
+    position: relative;
+}
+.option-position{
+   
+    position: absolute;
+    top: 25%;
+}
+.shadow{
+    filter: brightness(50%);
+    width: 100%;
+ 
+}
+.image-box {
+    position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 187px;
+
+  }
+  
+
+  /* Style for the text overlay */
+  .title-on-picture-suggested {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  .title-on-picture-popular{
+    position: absolute;
+  top: 66%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  }
+  .menu-divisions{
+    border-right: 4px solid rgb(72, 255, 0);
+  }
+  .line-height-description{
+    line-height: 2em;
+  }
+  .color-hr{
+    background-color: #e1e1e1;
+  }
