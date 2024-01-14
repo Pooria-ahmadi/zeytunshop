@@ -1,28 +1,28 @@
 <template>
   <div>
-    <img src="background-option.jpg" alt="" style="width: 100%;">
+    <img src="background-option.jpg" alt="" style="width: 100%;" >
     <div class="option-position is-hidden-mobile">
       <div class="columns mx-6 mb-0 is-justify-content-center is-multiline">
         <div class="column is-3-desktop">
-          <a href="#">
+          <NuxtLink to="/Article">
             <div class="position-image-suggested">
-              <div class="image-box" style="height: 550px;">
+              <div class="image-box" >
                 <img src="7.jpg" class="shadow">
               </div>
               <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
                 زیتون اصیل خارجی و خوش طعم لوراس
               </p>
             </div>
-          </a>
+          </NuxtLink>
         </div>
         <div class="column is-5-desktop">
           <a href="#">
             <div class="position-image-suggested">
-              <div class="image-box" style="height: 200px;">
+              <div class="image-box" >
                 <img src="1.jpg" class="shadow">
               </div>
               <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
-                زیتون اصیل خارجی و خوش طعم لوراس
+                روغن زیتون سرخ کردنی ایتالیا
               </p>
             </div>
           </a>
@@ -34,7 +34,8 @@
                     <img src="2.jpg" class="shadow">
                   </div>
                   <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
-                    زیتون اصیل خارجی و خوش طعم لوراس
+                    زیتون اصیل خارجی  
+خوش طعم لوراس
                   </p>
                 </div>
               </a>
@@ -46,7 +47,8 @@
                     <img src="10.jpg" class="shadow">
                   </div>
                   <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
-                    زیتون اصیل خارجی و خوش طعم لوراس
+                    زیتون سیاه خوش
+طعم لوراس و ...
                   </p>
                 </div>
               </a>
