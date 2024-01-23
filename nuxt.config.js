@@ -13,14 +13,14 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bulma/css/bulma.min.css',
-    'main/css/style.css'
+    'main/css/style.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -55,7 +55,7 @@
                         </a>
                     </div>
                 </div>
-                <hr class="color-hr mx-6">
+                <hr class="has-background-grey-lighter mx-6">
                 <div class="columns is-centered">
                     <div class="column is-three-quarters">
                         <a href="#">
@@ -71,7 +71,7 @@
                         </a>
                     </div>
                 </div>
-                <hr class="color-hr mx-6">
+                <hr class="has-background-grey-lighter mx-6">
                 <div class="columns is-centered">
                     <div class="column is-three-quarters">
                         <a href="#">
@@ -107,7 +107,7 @@
                         </a>
                     </div>
                 </div>
-                <hr class="color-hr mx-6">
+                <hr class="has-background-grey-lighter mx-6">
                 <div class="columns is-centered mt-2">
                     <div class="column is-three-quarters">
                         <a href="#">
@@ -164,3 +164,6 @@
         </div>
     </div>
 </template>
+<script>
+
+</script>

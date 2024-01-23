@@ -1,6 +1,22 @@
 <template>
   <div>
-    <img src="background-option.jpg" alt="" style="width: 100%;" >
+    <div class="slideshow-container m-auto is-hidden-desktop">
+
+    <div v-for="(slide, index) in slides" :key="index" class="mySlides" v-show="index === currentSlide">
+      <img :src="slide.image" alt="زیتون شاپ" class="width-shadow-slider">
+      <div class="Caption-text has-text-white has-text-weight-bold is-size-5 p-5 has-text-centered">{{ slide.caption }}</div>
+    </div>
+    <a class="next has-text-white has-text-weight-bold is-size-6" @click="prevSlide">&#10094;</a>
+    <a class="prev has-text-white has-text-weight-bold is-size-6" @click="nextSlide">&#10095;</a>
+  </div>
+
+  <div class="has-text-centered is-hidden-desktop mt-4">
+    <span v-for="(dot, index) in slides" :key="index" class="dot" :class="{ 'active': index === currentSlide }" @click="changeSlide(index)"></span> 
+  </div>
+
+
+
+    <img src="background-option.jpg" alt="" style="width: 100%;"  class="is-hidden-mobile">
     <div class="option-position is-hidden-mobile">
       <div class="columns mx-6 mb-0 is-justify-content-center is-multiline">
         <div class="column is-3-desktop">
@@ -9,7 +25,7 @@
               <div class="image-box" >
                 <img src="7.jpg" class="shadow">
               </div>
-              <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
+              <p class="title-on-picture-suggested has-text-weight-bold has-text-white has-text-centered">
                 زیتون اصیل خارجی و خوش طعم لوراس
               </p>
             </div>
@@ -21,7 +37,7 @@
               <div class="image-box" >
                 <img src="1.jpg" class="shadow">
               </div>
-              <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
+              <p class="title-on-picture-suggested has-text-weight-bold has-text-white has-text-centered">
                 روغن زیتون سرخ کردنی ایتالیا
               </p>
             </div>
@@ -33,7 +49,7 @@
                   <div class="image-box">
                     <img src="2.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
+                  <p class="title-on-picture-suggested has-text-weight-bold has-text-white has-text-centered">
                     زیتون اصیل خارجی  
 خوش طعم لوراس
                   </p>
@@ -46,7 +62,7 @@
                   <div class="image-box">
                     <img src="10.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-suggested has-text-weight-bold has-text-white">
+                  <p class="title-on-picture-suggested has-text-weight-bold has-text-white has-text-centered">
                     زیتون سیاه خوش
 طعم لوراس و ...
                   </p>
@@ -72,7 +88,7 @@
                   <div class="image-box">
                     <img src="10.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold">
+                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold has-text-centered">
                     زیتون سبز اصیل ترکیه
                   </p>
                 </div>
@@ -86,7 +102,7 @@
                   <div class="image-box">
                     <img src="6.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold">
+                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold has-text-centered">
                     روغن زیتون ایتالیا
                   </p>
                 </div>
@@ -100,7 +116,7 @@
                   <div class="image-box">
                     <img src="2.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold">
+                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold has-text-centered">
                     زیتون شکسته لوراس
                   </p>
                 </div>
@@ -119,7 +135,7 @@
                   <div class="image-box">
                     <img src="1.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold">
+                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold has-text-centered">
                     زیتون شکسته ایکرام
                   </p>
                 </div>
@@ -131,10 +147,10 @@
               <a href="#">
                 <div class="position-image-suggested">
                   <div class="image-box">
-                    <img src="1.jpg" class="shadow">
+                    <img src="19.jpg" class="shadow">
                   </div>
-                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold">
-                    زیتون شکسته ایکرام
+                  <p class="title-on-picture-popular is-size-5 has-text-white has-text-weight-bold has-text-centered">
+                    زیتون بی هسته ایکرام
                   </p>
                 </div>
               </a>
@@ -160,7 +176,7 @@
             <img src="5.jpg" alt="">
           </div>
         </div>
-        <hr class="color-hr">
+        <hr class="has-background-grey-lighter">
         <div class="columns is-centered is-mobile">
           <div class="column">
             <p class="has-text-weight-bold">
@@ -174,7 +190,7 @@
             <img src="17.jpg" alt="">
           </div>
         </div>
-        <hr class="color-hr">
+        <hr class="has-background-grey-lighter">
         <div class="columns is-centered is-mobile">
           <div class="column">
             <p class="has-text-weight-bold">
@@ -188,7 +204,7 @@
             <img src="18.jpg" alt="">
           </div>
         </div>
-        <hr class="color-hr">
+        <hr class="has-background-grey-lighter">
         <div class="columns is-centered is-mobile">
           <div class="column">
             <p class="has-text-weight-bold">
@@ -204,7 +220,40 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+    currentSlide: 0,
+    slides: [
+      { image: '1.jpg', caption: 'زیتون شاپ مرجع زیتون های اصیل' },
+      { image: '2.jpg', },
+      { image: '3.jpg', },
 
-
+    ]
+    };
+  },
+  mounted() {
+    this.showSlides();
+  },
+  methods: {
+    showSlides() {
+      setInterval(() => {
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+      }, 5000);
+    },
+    changeSlide(index) {
+      this.currentSlide = index;
+    },
+    prevSlide() {
+      this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    },
+    nextSlide() {
+      this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+    }
+  }
+}
+</script>
