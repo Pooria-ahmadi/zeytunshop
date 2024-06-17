@@ -1,3 +1,26 @@
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url('~/fonts/Vazir.eot');
+  src: url('~/fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+  url('~/fonts/Vazir.woff2') format('woff2'), 
+  url('~/fonts/Vazir.woff') format('woff'), 
+  url('~/fonts/Vazir.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url('~/fonts/Vazir-Bold.eot');
+  src: url('~/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('~/fonts/Vazir-Bold.woff2') format('woff2'), 
+  url('~/fonts/Vazir-Bold.woff') format('woff'), 
+  url('~/fonts/Vazir-Bold.ttf') format('truetype');
+ }
+ .font-family {
+  font-family: vazir;
+}
 .position-image-suggested{
     position: relative;
 }
@@ -38,8 +61,9 @@
 
 /* slider image for mobile */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1507px;
   position: relative;
+  width: 100%;
 }
 
 /* Caption text */
@@ -71,10 +95,6 @@
 .active {
   background-color: #717171;
 }
-.mySlides{
-  overflow: hidden;
-  height: 187px;
-}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -92,4 +112,8 @@
 .next {
   right: 0;
   border-radius: 0 3px 3px 0;
+}
+.mySlides{
+  overflow: hidden;
+  height: 187px;
 }

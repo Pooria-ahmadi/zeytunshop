@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="font-family">
         <div class="columns mt-6 mx-4 is-centered">
             <div class="column  is-three-fifths">
                 <p class="has-text-weight-bold is-size-5 mb-5">
@@ -47,7 +47,7 @@
                                 <div class="image-box">
                                     <img src="10.jpg" class="shadow">
                                 </div>
-                                <p class="has-text-grey-darker has-text-weight-bold has-text-centered mt-2">
+                                <p class="has-text-grey-darker has-text-weight-bold mt-2">
                                     روغن زیتون ایتالیکو بهترین
                                     روغن زیتون اصیل ایتالیا
                                 </p>
@@ -63,7 +63,7 @@
                                 <div class="image-box">
                                     <img src="6.jpg" class="shadow">
                                 </div>
-                                <p class="has-text-grey-darker has-text-weight-bold has-text-centered mt-2">
+                                <p class="has-text-grey-darker has-text-weight-bold  mt-2">
                                     زیتون شکسته لوراس بهترین
                                     زیتون اصیل ترکیه
                                 </p>
@@ -79,7 +79,7 @@
                                 <div class="image-box">
                                     <img src="2.jpg" class="shadow">
                                 </div>
-                                <p class="has-text-grey-darker has-text-weight-bold has-text-centered mt-2">
+                                <p class="has-text-grey-darker has-text-weight-bold mt-2">
                                     زیتون سبز لوراس بهترین
                                     زیتون اصیل ترکیه
                                 </p>
@@ -99,7 +99,7 @@
                                 <div class="image-box">
                                     <img src="1.jpg" class="shadow">
                                 </div>
-                                <p class="has-text-grey-darker has-text-weight-bold has-text-centered mt-2">
+                                <p class="has-text-grey-darker has-text-weight-bold mt-2">
                                     روغن زیتون ایتالیا بهترین
                                     روغن زیتون اصیل ایتالیا
                                 </p>
@@ -115,7 +115,7 @@
                                 <div class="image-box">
                                     <img src="1.jpg" class="shadow">
                                 </div>
-                                <p class="has-text-grey-darker has-text-weight-bold has-text-centered mt-2">
+                                <p class="has-text-grey-darker has-text-weight-bold mt-2">
                                     زیتون شکسته لوراس بهترین
                                     زیتون اصیل ترکیه
                                 </p>
